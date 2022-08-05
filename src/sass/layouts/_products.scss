@@ -30,9 +30,12 @@
     background-color:#FFB8CA;
     border-radius: 24px;
     border:none;
-    margin-bottom: 128px;
+    margin-bottom: 140px;
     position: relative;
     padding-top: 160px;
+
+    padding-bottom: 70px;
+    
 
 
 
@@ -48,11 +51,29 @@
     height: 280px;
     margin-top: 11px;
     position: absolute;
-    top: -160px;;
+    top: -160px;
     left: 0;
+    margin-bottom: 70px;
 
     
     
+
+}
+
+.products__subtitle-one::after {
+    content: "...";
+    width: 26px;
+    display: block;
+    height: 6px;
+    
+    position: absolute;
+    bottom: 214px;
+    right: 127px;
+    
+    margin-bottom: 70px;
+
+
+
 
 }
 
@@ -62,6 +83,29 @@
     width: 280px;
     display: block;
     height: 280px;
+    
+    position: absolute;
+    top: -146px;
+     
+    left: 0;
+    margin-bottom: 70px;
+
+}
+
+.products__subtitle-two::after {
+    content: "...";
+    width: 26px;
+    display: block;
+    height: 6px;
+
+    position: absolute;
+    bottom: 214px;
+    right: 127px;
+
+    margin-bottom: 70px;
+
+
+
 
 }
 
@@ -71,6 +115,28 @@
     width: 280px;
     display: block;
     height: 280px;
+    position: absolute;
+    top: -140px;
+    
+    left: 0;
+    margin-bottom: 70px;
+
+}
+
+.products__subtitle-three::after {
+    content: "...";
+    width: 26px;
+    display: block;
+    height: 6px;
+
+    position: absolute;
+    bottom: 214px;
+    right: 127px;
+
+    margin-bottom: 70px;
+
+
+
 
 }
 
@@ -81,8 +147,13 @@
     background-color: #F0D1A5;
     border-radius: 24px;
     border: none;
-    margin-bottom: 128px;
+    margin-bottom: 140px;
     align-items: center;
+    
+    position: relative;
+    padding-top: 160px;
+    
+    padding-bottom: 70px;
 
 
 }
@@ -93,7 +164,13 @@
     background-color: #C2E297;
     border-radius: 24px;
     border: none;
+    margin-bottom: 128px;
+    align-items: center;
 
+    position: relative;
+    padding-top: 160px;
+
+    padding-bottom: 70px;
 
 }
 
@@ -101,7 +178,7 @@
 .products__subtitle-two,
 .products__subtitle-three {
     text-align: center;
-    
+    margin-bottom: 70px;
     
 
     @include font('Titan One', 400, 20px, 1.15, none, 0.04em);
@@ -111,9 +188,10 @@
 .products__text {
     width: 200px;
     height: 124px;
-    
+    margin-left: 40px;
     text-align: center;
     align-items: center;
+    margin-bottom: 32px;
 
     @include font('DM Sans', 700, 14px, 1.5, none, 0.04em);
     color: white;
