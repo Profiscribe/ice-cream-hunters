@@ -2,6 +2,8 @@
     background-color: white;
     padding-right: 20px;
     padding-left: 20px;
+ 
+    
 
 }
 .products__pretitle {
@@ -11,8 +13,20 @@
    color: #FFA5BA;
    @include font('Titan One', 400, 20px, 1.17, none, none);
    text-transform: uppercase;
-}
 
+       
+   @media screen and (min-width: 768px) {
+       @include font('Titan One', 400, 26px, 1.15, none, none);
+    }
+   
+        
+    @media screen and (min-width: 1200px) {
+        @include font('Titan One', 400, 30px, 1.13, none, 0.04em);
+    }
+
+
+
+}
 .products__title {
     padding-top: 15px;
     margin-bottom: 157px;
@@ -20,6 +34,15 @@
     text-align: center;
     color: #D41443;
     @include font('Titan One', 400, 34px, 1.14, none, 0.04em);
+
+    @media screen and (min-width: 768px) {
+        @include font('Titan One', 400, 48px, 1.14, none, 0.04em);
+        padding-top: 18px;
+        margin-bottom: 158px;
+
+    }
+
+
 }
 
 
@@ -35,10 +58,14 @@
     padding-top: 160px;
 
     padding-bottom: 70px;
-    
 
-
-
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 473px;
+        margin-bottom: 60px;
+        padding-top: 118px;
+        
+    }
 
 }
 
@@ -55,7 +82,15 @@
     left: 0;
     margin-bottom: 70px;
 
-    
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/product/tablet/cream-224.png");
+        width: 224px;
+        height: 224px;
+        margin-top: 20px;
+        top: -160px;
+        left: 0;
+        margin-bottom: 70px;
+    }
     
 
 }
@@ -71,6 +106,11 @@
     right: 127px;
     
     margin-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        right: 99px;
+        margin-bottom: 90px;
+    }
 
 
 
@@ -89,6 +129,15 @@
      
     left: 0;
     margin-bottom: 70px;
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/product/tablet/coffee-224.png");
+        width: 224px;
+        height: 224px;
+        margin-top: 20px;
+        top: -160px;
+        left: 0;
+        margin-bottom: 70px;
+    }
 
 }
 
@@ -103,6 +152,10 @@
     right: 127px;
 
     margin-bottom: 70px;
+    @media screen and (min-width: 768px) {
+        right: 99px;
+        margin-bottom: 90px;
+    }
 
 
 
@@ -121,6 +174,17 @@
     left: 0;
     margin-bottom: 70px;
 
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/product/tablet/milkshakes-224.png");
+        width: 224px;
+        height: 224px;
+        margin-top: 20px;
+        top: -160px;
+        left: 0;
+        margin-bottom: 70px;
+
+    }
+
 }
 
 .products__subtitle-three::after {
@@ -134,7 +198,10 @@
     right: 127px;
 
     margin-bottom: 70px;
-
+    @media screen and (min-width: 768px) {
+        right: 99px;
+        margin-bottom: 90px;
+    }
 
 
 
@@ -154,6 +221,14 @@
     padding-top: 160px;
     
     padding-bottom: 70px;
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 473px;
+        margin-bottom: 60px;
+        padding-top: 118px;;
+        padding-bottom: 70px;
+    
+    }
 
 
 }
@@ -171,6 +246,13 @@
     padding-top: 160px;
 
     padding-bottom: 70px;
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 473px;
+        margin-bottom: 70px;
+        padding-top: 118px;
+    
+    }
 
 }
 
@@ -180,11 +262,25 @@
     text-align: center;
     margin-bottom: 70px;
     
-
     @include font('Titan One', 400, 20px, 1.15, none, 0.04em);
     color: white;
+
+    @media screen and (min-width: 768px) {
+        @include font('Titan One', 400, 20px, 1.14, none, 0.04em);
+         margin-bottom: 70px;
+    }
+
+
 }
 
+.wrap {
+    @media screen and (min-width: 768px) {
+       display: flex;  
+       justify-content: center;
+       justify-content: space-around;
+    }
+    
+}
 .products__text {
     width: 200px;
     height: 124px;
@@ -195,6 +291,13 @@
 
     @include font('DM Sans', 700, 14px, 1.5, none, 0.04em);
     color: white;
+
+    @media screen and (min-width: 768px) {
+        @include font('DM Sans', 400, 14px, 1.76, none, 0.04em);
+        width: 160px;
+        height: 150px;
+        margin-left: 32px;
+    }
 
 }
 
@@ -222,7 +325,10 @@
     margin-right: auto;
     border: none;
     margin-bottom: 40px;
-    
+
+    @media screen and (min-width: 768px) {
+       
+    }
+  
 
 }
-
